@@ -5,6 +5,6 @@ please PR if you found any update.
 
 
 Open Source ຂໍ້ມູນ ແຂວງ, ເມືອງ, ບ້ານ ຂອງ ປະເທດລາວ ເປັນ SQL format 
-ຫາກຫລານນຫັນ Update ສ່ວນໃດຢ່າລືມເຮັດ PR ມາເດີ້ 
+ຫາກຫລານເຫັນ Update ສ່ວນໃດຢ່າລືມເຮັດ PR ມາເດີ້ 
 
 Credit: Toung Slp
