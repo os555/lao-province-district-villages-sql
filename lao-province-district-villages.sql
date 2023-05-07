@@ -22,21 +22,21 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `dristric`
+-- Table structure for table `district`
 --
 
-CREATE TABLE `dristric` (
-  `dr_id` int(3) NOT NULL,
-  `dr_name` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
-  `dr_name_en` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+CREATE TABLE `district` (
+  `di_id` int(3) NOT NULL,
+  `di_name` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `di_name_en` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
   `pr_id` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `dristric`
+-- Dumping data for table `district`
 --
 
-INSERT INTO `dristric` (`dr_id`, `dr_name`, `dr_name_en`, `pr_id`) VALUES
+INSERT INTO `district` (`di_id`, `di_name`, `di_name_en`, `pr_id`) VALUES
 (101, 'ຈັນທະບູລີ', 'Chanthabuly', 1),
 (102, 'ສີໂຄດຕະບອງ', 'Sikhottabong', 1),
 (103, 'ໄຊເສດຖາ', 'Xaysetha', 1),
@@ -232,14 +232,14 @@ CREATE TABLE `village` (
   `vill_id` int(10) UNSIGNED NOT NULL,
   `vill_name` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
   `vill_name_en` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
-  `dr_id` int(3) NOT NULL
+  `di_id` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `village`
 --
 
-INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `dr_id`) VALUES
+INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `di_id`) VALUES
 (10101, 'ໜອງປິງ', 'Nongping', 101),
 (10102, 'ບໍ່ນາງົວ', 'Bornangoua', 101),
 (10103, 'ຫ້ວຍຫົງ', 'Houyhong', 101),
@@ -1731,7 +1731,7 @@ INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `dr_id`) VALUES
 (40186, 'ໂຮມໄຊ', '', 401),
 (40187, 'ມູນເມືອງ', '', 401),
 (40188, 'ຫ້ວຍເຮ້ຍ', '', 401);
-INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `dr_id`) VALUES
+INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `di_id`) VALUES
 (40189, 'ນາຈາງ+ຫ້ວຍຕຳ', '', 401),
 (40190, 'ສະນາງປິ', '', 401),
 (40191, 'ຫ້ວຍລ້ຽງ+ພຽງໄຊ', '', 401),
@@ -3284,7 +3284,7 @@ INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `dr_id`) VALUES
 (70219, 'ນາເຮື້ອ', '', 702),
 (70220, 'ຫວ້ຍມອນ', '', 702),
 (70221, 'ໂພນທອງ', '', 702);
-INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `dr_id`) VALUES
+INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `di_id`) VALUES
 (70222, 'ນາວຽງ', '', 702),
 (70223, 'ພຽງສາ', '', 702),
 (70224, 'ກໍໄຮ', '', 702),
@@ -4811,7 +4811,7 @@ INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `dr_id`) VALUES
 (905008, 'ພູ​ລີນ-​ພູ​ມອນ', '', 905),
 (905009, 'ທົ່ງ​ເປີ້', '', 905),
 (905010, 'ນາ​ເມືອງ-ໃໝ່', '', 905);
-INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `dr_id`) VALUES
+INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `di_id`) VALUES
 (905011, 'ນ້ຳ​ເຢັນ-ນ້ຳໂຮງ', '', 905),
 (905012, 'ຖ້ຳສ່ອຍ', '', 905),
 (905013, 'ຜາ​ແດງ', '', 905),
@@ -6226,7 +6226,7 @@ INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `dr_id`) VALUES
 (1206061, 'ຈະແລດ', '', 1206),
 (1206062, 'ໂຮງ', '', 1206),
 (1206063, 'ວັງຫລວງ', '', 1206);
-INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `dr_id`) VALUES
+INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `di_id`) VALUES
 (1206064, 'ໜອງກຸ້ງ', '', 1206),
 (1206065, 'ບ້ານລາດ', '', 1206),
 (1206066, 'ບ້ານທັບລາວ', '', 1206),
@@ -7645,7 +7645,7 @@ INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `dr_id`) VALUES
 (1406009, 'ບົວລະພາ', '', 1406),
 (1406010, 'ບຶງກາງ', '', 1406),
 (1406011, 'ຄົງນ້ອຍ', '', 1406);
-INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `dr_id`) VALUES
+INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `di_id`) VALUES
 (1406012, 'ບຶງກາງ', '', 1406),
 (1406013, 'ໜອງເກາະຊອງ', '', 1406),
 (1406014, 'ໝອງສະພັງ', '', 1406),
@@ -9035,7 +9035,7 @@ INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `dr_id`) VALUES
 (1805011, 'ຖ້ຳດິນ', 'Thamdin', 1805),
 (1805012, 'ພູປ່າມັນ', 'Phoupaman', 1805),
 (1805013, 'ນໍ້າຍີ້ງ', 'Namying', 1805);
-INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `dr_id`) VALUES
+INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `di_id`) VALUES
 (1805014, 'ບ້ານຊຽງມີ', 'Xiengmy', 1805),
 (1805015, 'ນໍ້າຄຸຍ', 'Numkeu', 1805),
 (1805016, 'ຜາດ່າງ', 'Phadang', 1805),
@@ -9192,10 +9192,10 @@ INSERT INTO `village` (`vill_id`, `vill_name`, `vill_name_en`, `dr_id`) VALUES
 --
 
 --
--- Indexes for table `dristric`
+-- Indexes for table `district`
 --
-ALTER TABLE `dristric`
-  ADD PRIMARY KEY (`dr_id`);
+ALTER TABLE `district`
+  ADD PRIMARY KEY (`di_id`);
 
 --
 -- Indexes for table `province`
